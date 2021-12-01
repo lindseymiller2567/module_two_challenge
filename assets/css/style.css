@@ -6,47 +6,54 @@
 
 body {
     font-family: Helvetica, Arial, sans-serif;
-    background-color:seashell;
 }
 
 /* start of header/nav styles */
 header {
     padding: 20px 35px;
     background-color: black;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: seashell;
+    color: white;
     margin: 0;
     display: inline; 
 }
 
 header a {
     text-decoration: none;
-    color: seashell;
+    color: white;
 }
 
 header nav {
-    float: right;
     margin: 7px 0;
 }
 
-header nav ul li {
-    display: inline; 
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
 }
 
 header nav ul li a {
     margin: 0 30px; 
     font-weight: lighter;
     font-size: 22px; 
+    border-bottom: 1px solid white;
+    padding: 0 8px 3px 8px;
 }
 
 /* start of footer styles */
 footer {
     background-color: black;
-    color: seashell;
+    color: white;
     width: 100%;
     padding: 20px 20px;
     text-align: center;
@@ -54,6 +61,11 @@ footer {
 }
 footer h2 {
     font-weight: lighter;
+}
+
+/* all sections style */
+section {
+    padding: 60px;
 }
 
 /* start of hero/jumbotron section styles */
@@ -64,12 +76,40 @@ footer h2 {
     background-position: center;
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     align-items: flex-end;
+    padding: 0;
 }
 .sub-header {
     background-color: black;
-    color: seashell;
-    width: 250px;
-    height: 75px;
-    text-align: center;
+    color: white;
+    height: 35%;
+    margin: 3.5%;
+    padding: 1.5%;
+}
+
+/* start of about me section */
+.section {
+    margin: 10px auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.section-title {
+    font-size: 40px;
+    text-align: right;
+    padding: 20px;
+    flex: 25%;
+    border-right: 3px solid black;
+}
+.about-info {
+    padding: 20px;
+    flex: 55%;
+}
+
+/* start of work section */
+.work-info {
+    padding: 20px;
+    flex: 55%;
 }
