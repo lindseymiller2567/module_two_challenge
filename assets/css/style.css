@@ -46,8 +46,12 @@ header nav ul li a {
     margin: 0 30px; 
     font-weight: lighter;
     font-size: 22px; 
-    border-bottom: 1px solid white;
     padding: 0 8px 3px 8px;
+}
+header nav ul li a:hover {
+    color:coral;
+    font-weight: bold;
+    border-bottom: 3px solid coral;
 }
 
 /* start of footer styles */
@@ -75,7 +79,7 @@ section {
 /* start of hero/jumbotron section styles */
 .hero {
     background-image: url("../images/jumbotron.jpg");
-    height: 300px;
+    height: 400px;
     background-size: cover;
     background-position: center;
     display: flex;
@@ -93,7 +97,7 @@ section {
     align-items: center;
 }
 
-/* start of about me section */
+/* section styles */
 .section {
     margin: 10px auto;
     width: 100%;
@@ -107,6 +111,8 @@ section {
     flex: 25%;
     border-right: 3px solid black;
 }
+
+/* start of about section */
 .about-content {
     padding-left: 20px;
     flex: 75%;
@@ -120,11 +126,15 @@ section {
     display:flex;
     flex-wrap: wrap;
 }
-.work-content div {
+.card {
     flex: 1 0 0; 
-    margin: 0 5px 5px 5px;
+    margin: 0 10px 10px 10px;
+    border: 2px solid black;
 }
-.work-content img {
+.card:first-child {
+    flex-basis: 100%;
+}
+.card img {
     width: 100%;
     min-width: 300px;
 }
@@ -137,4 +147,13 @@ section {
 }
 .contact-content address {
     font-style: normal;
+}
+.contact-content address a {
+    text-decoration: none;
+    color: black;
+}
+.contact-content address a:hover {
+    color: coral;
+    font-weight: bold;
+    border-bottom: 3px solid coral;
 }
