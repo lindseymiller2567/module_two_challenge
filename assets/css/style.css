@@ -131,12 +131,26 @@ section {
     margin: 0 10px 10px 10px;
     border: 2px solid black;
 }
+.card:hover {
+    border: 5px solid coral;
+}
 .card:first-child {
     flex-basis: 100%;
 }
 .card img {
     width: 100%;
     min-width: 300px;
+}
+.card h3 {
+    background-color: black;
+    color: white;
+}
+
+/* start of skills section */
+.skills-content {
+    padding-left: 40px;
+    flex: 75%;
+    line-height: 1.5;
 }
 
 /* start of contact section */
@@ -156,4 +170,20 @@ section {
     color: coral;
     font-weight: bold;
     border-bottom: 3px solid coral;
+}
+
+/* Start of Media Queries */
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+    
 }
