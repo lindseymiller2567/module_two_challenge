@@ -105,7 +105,7 @@ section {
     flex-wrap: wrap;
 }
 .section-title {
-    font-size: 35px;
+    font-size: 30px;
     text-align: right;
     padding-right: 20px;
     flex: 25%;
@@ -135,11 +135,11 @@ section {
     border: 5px solid coral;
 }
 .card:first-child {
-    flex-basis: 100%;
+    flex-basis: 75%;
 }
 .card img {
     width: 100%;
-    min-width: 300px;
+    min-width: 400px;
 }
 .card h3 {
     background-color: black;
@@ -175,15 +175,52 @@ section {
 /* Start of Media Queries */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
-
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    header h1 {
+        width: 100%;
+        text-align: center;
+    }
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+    header nav ul li a {
+        font-size: 20px;
+    }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
-
+    .sub-header {
+        margin: auto auto;
+    }
+    .section-title {
+        font-size: 30px;
+        text-align: center;
+        flex: 100%;
+        border-bottom: 3px solid black;
+        border-right: 0px;
+        padding: 0 0 20px 0;
+    }
+    .about-content, .work-content, .skills-content, .contact-content {
+        padding-top: 20px;
+    }
+    section {
+        padding: 40px;
+    }
 }
 
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-    
+    header nav ul li a {
+        margin: 0 10px; 
+    }
+    section {
+        padding: 30px;
+    }
 }
