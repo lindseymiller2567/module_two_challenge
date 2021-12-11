@@ -172,6 +172,15 @@ section {
     font-weight: bold;
     border-bottom: 3px solid coral;
 }
+.contact-content p a {
+    text-decoration: none; 
+    color: black;   
+}
+.contact-content p a:hover {
+    color: coral;
+    font-weight: bold;
+    border-bottom: 3px solid coral;
+}
 
 /* Start of Media Queries */
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
@@ -227,5 +236,12 @@ section {
     }
     .card img {
         min-width: 340px;
+    }
+}
+
+/* MEDIA QUERY FOR VERY SMALL SCREENS */
+@media screen and (max-width: 375px) {
+    .card img {
+        min-width: 200px;
     }
 }
