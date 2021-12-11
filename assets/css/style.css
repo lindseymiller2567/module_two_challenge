@@ -225,4 +225,7 @@ section {
     section {
         padding: 30px;
     }
+    .card img {
+        min-width: 340px;
+    }
 }
