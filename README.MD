@@ -13,5 +13,5 @@ https://lindseymiller2567.github.io/module_two_challenge/
 ## Contribution
 Created by Lindsey Dubnicka
 
-## Screen Shot of Horiseon web page
-TBA
+## Screen Shot of Portfolio web page
+![ScreenShot](./assets/images/Portfolio-screenshot-for-README.png)
