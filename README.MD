@@ -8,7 +8,7 @@ The challenge this week was create our own portfolio website. Throughout the cou
 * CSS
 
 ## Website
-https://lindseymiller2567.github.io/module_two_challenge/
+https://lindseymiller2567.github.io/my-web-dev-portfolio/ 
 
 ## Contribution
 Created by Lindsey Dubnicka
